@@ -108,15 +108,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -1965,6 +1990,37 @@ Right angle, 2 position, female</description>
 <circle x="0" y="0" radius="2.125" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="2.5"/>
 </package>
+<package name="POT_3214W">
+<description>Footprint for 3214W Bourns potentiometers &lt;br&gt;
+https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
+<smd name="3" x="1.45" y="1.25" dx="1.3" dy="1.6" layer="1" rot="R90"/>
+<smd name="1" x="1.45" y="-1.25" dx="1.3" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="-1.45" y="0" dx="1.6" dy="2" layer="1"/>
+<wire x1="-1.75" y1="2.4" x2="-1.75" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-2.4" x2="1.75" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-2.4" x2="1.75" y2="2.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="2.4" x2="-1.75" y2="2.4" width="0.127" layer="21"/>
+<circle x="-0.635" y="1.27" radius="0.523634375" width="0.127" layer="21"/>
+<text x="0" y="3.048" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="P0915N">
+<description>Potentiometer layout&lt;br&gt;Referance &lt;a href = "https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Potentiometers/Datasheets/P09x.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="-2.5" y="0" drill="1"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="2.5" y="0" drill="1"/>
+<pad name="BODY@1" x="-4.75" y="7.5" drill="1.8"/>
+<pad name="BODY@2" x="4.75" y="7.5" drill="1.8"/>
+<wire x1="-5.35" y1="11.85" x2="-5.35" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="-5.35" y1="1.5" x2="-4.85" y2="1" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.85" y1="1" x2="4.85" y2="1" width="0.1524" layer="21"/>
+<wire x1="4.85" y1="1" x2="5.35" y2="1.5" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.35" y1="1.5" x2="5.35" y2="11.85" width="0.1524" layer="21"/>
+<wire x1="5.35" y1="11.85" x2="4.85" y2="12.35" width="0.1524" layer="21" curve="90"/>
+<wire x1="4.85" y1="12.35" x2="-4.85" y2="12.35" width="0.1524" layer="21"/>
+<wire x1="-4.85" y1="12.35" x2="-5.35" y2="11.85" width="0.1524" layer="21" curve="90"/>
+<circle x="0" y="6.5" radius="3" width="0.1524" layer="21"/>
+<text x="0" y="13.081" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TPS22917">
@@ -2250,6 +2306,35 @@ Switches electronic signals</description>
 <circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
 <text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="POTENTIOMETER">
+<description>&lt;h3&gt;Potentiometer (Pot)&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;</description>
+<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="0" y1="-4.572" x2="-1.016" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="3.81" x2="0" y2="4.572" width="0.254" layer="94"/>
+<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="2.667" y1="-3.429" x2="2.032" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-4.699" x2="2.032" y2="-3.429" width="0.1524" layer="94"/>
+<text x="3.048" y="-0.254" size="1.778" layer="95" font="vector" rot="R270">&gt;NAME</text>
+<text x="-1.27" y="0" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center">&gt;Value</text>
+<pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<polygon width="0.2032" layer="94">
+<vertex x="2.54" y="-1.27"/>
+<vertex x="1.27" y="0"/>
+<vertex x="2.54" y="1.27"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -3505,6 +3590,34 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <attribute name="MF" value="N/A" constant="no"/>
 <attribute name="MPN" value="DNP" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POTENTIOMETER" prefix="VR">
+<description>Genaric potentiometer</description>
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3214W" package="POT_3214W">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P09X5N" package="P0915N">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6676,6 +6789,26 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="R_TH_0.4&quot;">
+<description>Relaxed resistor layout (0.4") for standard 1/4W resistors</description>
+<pad name="P$1" x="-5.08" y="0" drill="1.1"/>
+<pad name="P$2" x="5.08" y="0" drill="1.1"/>
+<wire x1="-3" y1="1.15" x2="-3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.15" x2="-1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.15" x2="-1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.016" x2="1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.016" x2="1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.15" x2="3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.15" x2="3" y2="1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="1.15" x2="1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.15" x2="1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.016" x2="-1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.15" x2="-3" y2="1.15" width="0.127" layer="21"/>
+<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.2" layer="21"/>
+<wire x1="4.953" y1="0" x2="3.048" y2="0" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R-EU">
@@ -6742,6 +6875,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0402JR-070RL" constant="no"/>
 <attribute name="VALUE_PART" value="0" constant="no"/>
 </technology>
+<technology name="10">
+<attribute name="DIGIKEY" value="A129603CT-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="CRGCQ0402F10R" constant="no"/>
+<attribute name="VALUE_PART" value="10" constant="no"/>
+</technology>
 <technology name="100">
 <attribute name="DIGIKEY" value="311-100LRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -6765,6 +6904,18 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07120KL" constant="no"/>
 <attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="130K">
+<attribute name="DIGIKEY" value="YAG2969CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07130KL" constant="no"/>
+<attribute name="VALUE_PART" value="130k" constant="no"/>
+</technology>
+<technology name="150K">
+<attribute name="DIGIKEY" value="311-150KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07150KL" constant="no"/>
+<attribute name="VALUE_PART" value="150k" constant="no"/>
 </technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="311-180KLRCT-ND" constant="no"/>
@@ -6790,6 +6941,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0402FR-072K2L" constant="no"/>
 <attribute name="VALUE_PART" value="2.2k" constant="no"/>
 </technology>
+<technology name="2.7K">
+<attribute name="DIGIKEY" value="CR0402-FX-2701GLFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0402-FX-2701GLF" constant="no"/>
+<attribute name="VALUE_PART" value="2.7k" constant="no"/>
+</technology>
 <technology name="20">
 <attribute name="DIGIKEY" value="311-20LRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -6801,6 +6958,18 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07200KL" constant="no"/>
 <attribute name="VALUE_PART" value="200k" constant="no"/>
+</technology>
+<technology name="20K">
+<attribute name="DIGIKEY" value="CR0402-FX-2002GLFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0402-FX-2002GLF" constant="no"/>
+<attribute name="VALUE_PART" value="20k" constant="no"/>
+</technology>
+<technology name="220">
+<attribute name="DIGIKEY" value="A129619CT-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="CRGCQ0402F220R" constant="no"/>
+<attribute name="VALUE_PART" value="220" constant="no"/>
 </technology>
 <technology name="232">
 <attribute name="DIGIKEY" value="YAG3063CT-ND" constant="no"/>
@@ -6826,6 +6995,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0402FR-072KL" constant="no"/>
 <attribute name="VALUE_PART" value="2k" constant="no"/>
 </technology>
+<technology name="30K">
+<attribute name="DIGIKEY" value="YAG3474CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="AC0402FR-0730KL" constant="no"/>
+<attribute name="VALUE_PART" value="30k" constant="no"/>
+</technology>
 <technology name="330">
 <attribute name="DIGIKEY" value="311-330LRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -6850,6 +7025,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0402FR-07453RL" constant="no"/>
 <attribute name="VALUE_PART" value="453" constant="no"/>
 </technology>
+<technology name="470">
+<attribute name="DIGIKEY" value="311-470LRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07470RL" constant="no"/>
+<attribute name="VALUE_PART" value="470" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R0603" package="R0603">
@@ -6863,6 +7044,18 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="VALUE_PART" value="" constant="no"/>
+</technology>
+<technology name="0.0">
+<attribute name="DIGIKEY" value="311-0.0LECT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="AC0603JR-070RL" constant="no"/>
+<attribute name="VALUE_PART" value="0" constant="no"/>
+</technology>
+<technology name="0.082">
+<attribute name="DIGIKEY" value="408-1446-1-ND" constant="no"/>
+<attribute name="MF" value="Susumu" constant="no"/>
+<attribute name="MPN" value="RL0816T-R082-F" constant="no"/>
+<attribute name="VALUE_PART" value="82m" constant="no"/>
 </technology>
 <technology name="1">
 <attribute name="DIGIKEY" value="311-1.00HRCT-ND" constant="no"/>
@@ -6888,6 +7081,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0603FR-0710RL" constant="no"/>
 <attribute name="VALUE_PART" value="10" constant="no"/>
 </technology>
+<technology name="100">
+<attribute name="DIGIKEY" value="311-100HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07100RL" constant="no"/>
+<attribute name="VALUE_PART" value="100" constant="no"/>
+</technology>
 <technology name="100K">
 <attribute name="DIGIKEY" value="311-100KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -6905,6 +7104,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Stackpole" constant="no"/>
 <attribute name="MPN" value="RMCF0603FT10M0" constant="no"/>
 <attribute name="VALUE_PART" value="10M" constant="no"/>
+</technology>
+<technology name="110K">
+<attribute name="DIGIKEY" value="CR0603-FX-1103ELFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0603-FX-1103ELF" constant="no"/>
+<attribute name="VALUE_PART" value="110k" constant="no"/>
 </technology>
 <technology name="115K">
 <attribute name="DIGIKEY" value="311-115KHRCT-ND" constant="no"/>
@@ -6942,6 +7147,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0603FR-07150RL" constant="no"/>
 <attribute name="VALUE_PART" value="150" constant="no"/>
 </technology>
+<technology name="150K">
+<attribute name="DIGIKEY" value="311-150KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07150KL" constant="no"/>
+<attribute name="VALUE_PART" value="150k" constant="no"/>
+</technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="P180KHCT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
@@ -6971,6 +7182,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-072K2L" constant="no"/>
 <attribute name="VALUE_PART" value="2.2k" constant="no"/>
+</technology>
+<technology name="20">
+<attribute name="DIGIKEY" value="311-20.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0720RL" constant="no"/>
+<attribute name="VALUE_PART" value="20" constant="no"/>
 </technology>
 <technology name="200K">
 <attribute name="DIGIKEY" value="311-200KHRCT-ND" constant="no"/>
@@ -7020,6 +7237,30 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RMCF0603FT3M30" constant="no"/>
 <attribute name="VALUE_PART" value="3.3M" constant="no"/>
 </technology>
+<technology name="30">
+<attribute name="DIGIKEY" value="311-30.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0730RL" constant="no"/>
+<attribute name="VALUE_PART" value="30" constant="no"/>
+</technology>
+<technology name="309K">
+<attribute name="DIGIKEY" value="P309KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF3093V" constant="no"/>
+<attribute name="VALUE_PART" value="309k" constant="no"/>
+</technology>
+<technology name="30K">
+<attribute name="DIGIKEY" value="311-30.0KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0730KL" constant="no"/>
+<attribute name="VALUE_PART" value="30k" constant="no"/>
+</technology>
+<technology name="316K">
+<attribute name="DIGIKEY" value="311-316KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07316KL" constant="no"/>
+<attribute name="VALUE_PART" value="316k" constant="no"/>
+</technology>
 <technology name="33.2K">
 <attribute name="DIGIKEY" value="311-33.2KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -7049,6 +7290,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-074K7L" constant="no"/>
 <attribute name="VALUE_PART" value="4.7k" constant="no"/>
+</technology>
+<technology name="40.2K">
+<attribute name="DIGIKEY" value="RMCF0603FT40K2CT-ND" constant="no"/>
+<attribute name="MF" value="Stackpole" constant="no"/>
+<attribute name="MPN" value="RMCF0603FT40K2" constant="no"/>
+<attribute name="VALUE_PART" value="40.2k" constant="no"/>
 </technology>
 <technology name="422K">
 <attribute name="DIGIKEY" value="311-422KHRCT-ND" constant="no"/>
@@ -7080,6 +7327,18 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0603JR-07470KL" constant="no"/>
 <attribute name="VALUE_PART" value="470k" constant="no"/>
 </technology>
+<technology name="49.9K">
+<attribute name="DIGIKEY" value="RMCF0603FG49K9CT-ND" constant="no"/>
+<attribute name="MF" value="Stackpole" constant="no"/>
+<attribute name="MPN" value="RMCF0603FG49K9" constant="no"/>
+<attribute name="VALUE_PART" value="49.9k" constant="no"/>
+</technology>
+<technology name="499K">
+<attribute name="DIGIKEY" value="311-499KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07499KL" constant="no"/>
+<attribute name="VALUE_PART" value="499k" constant="no"/>
+</technology>
 <technology name="51.1K">
 <attribute name="DIGIKEY" value="118-CR0603-FX-5112ELFCT-ND" constant="no"/>
 <attribute name="MF" value="Bourns" constant="no"/>
@@ -7103,6 +7362,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07590KL" constant="no"/>
 <attribute name="VALUE_PART" value="590k" constant="no"/>
+</technology>
+<technology name="62K">
+<attribute name="DIGIKEY" value="RMCF0603FT62K0CT-ND" constant="no"/>
+<attribute name="MF" value="Stackpole" constant="no"/>
+<attribute name="MPN" value="RMCF0603FT62K0" constant="no"/>
+<attribute name="VALUE_PART" value="62k" constant="no"/>
 </technology>
 <technology name="750K">
 <attribute name="DIGIKEY" value="311-750KHRCT-ND" constant="no"/>
@@ -7177,6 +7442,11 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
+<technology name="0.002">
+<attribute name="DIGIKEY" value="RHM.002AJCT-ND" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="PMR10EZPFV2L00" constant="no"/>
+</technology>
 <technology name="0.003">
 <attribute name="DIGIKEY" value="RHM.003AJCT-ND" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
@@ -7201,6 +7471,11 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="DIGIKEY" value="P19308CT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
 <attribute name="MPN" value="ERJ-6DSFR10V" constant="no"/>
+</technology>
+<technology name="10">
+<attribute name="DIGIKEY" value="A129603CT-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="CRGCQ0402F10R" constant="no"/>
 </technology>
 <technology name="100">
 <attribute name="DIGIKEY" value="311-100CRCT-ND" constant="no"/>
@@ -7997,6 +8272,15 @@ Source: AVX .. aphvc.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TH_0.4&quot;" package="R_TH_0.4&quot;">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8936,7 +9220,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="L1" library="bschulz" deviceset="INDUCTOR" device="1008" value="2.2uH"/>
 <part name="C5" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
 <part name="R4" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="10K" value="10k"/>
-<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="33.2K" value="33.2k"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8947,6 +9230,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="H3" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
 <part name="BT3" library="bschulz" deviceset="AA" device="CLIP"/>
 <part name="H4" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
+<part name="VR1" library="bschulz" deviceset="POTENTIOMETER" device="3214W"/>
+<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="4.7K" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9068,16 +9353,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="118.364" y="112.141" size="1.778" layer="95"/>
 <attribute name="VALUE" x="118.364" y="107.061" size="1.778" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="134.62" y="99.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="133.1214" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="137.922" y="95.25" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="134.62" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="133.1214" y="74.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="137.922" y="74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$1" x="134.62" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="133.1214" y="105.41" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="137.922" y="105.41" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND11" gate="1" x="134.62" y="88.9" smashed="yes">
-<attribute name="VALUE" x="132.08" y="86.36" size="1.778" layer="96"/>
+<instance part="GND11" gate="1" x="134.62" y="68.58" smashed="yes">
+<attribute name="VALUE" x="132.08" y="66.04" size="1.778" layer="96"/>
 </instance>
 <instance part="GND12" gate="1" x="144.78" y="101.6" smashed="yes">
 <attribute name="VALUE" x="142.24" y="99.06" size="1.778" layer="96"/>
@@ -9110,6 +9391,14 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="H4" gate="G$1" x="210.82" y="27.94" smashed="yes">
 <attribute name="NAME" x="212.852" y="28.5242" size="1.778" layer="95"/>
 <attribute name="VALUE" x="212.852" y="25.4762" size="1.778" layer="96"/>
+</instance>
+<instance part="VR1" gate="G$1" x="139.7" y="91.44" smashed="yes" rot="R180">
+<attribute name="NAME" x="136.652" y="91.694" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="140.97" y="91.44" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+</instance>
+<instance part="R5" gate="G$1" x="139.7" y="106.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="138.2014" y="102.87" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="143.002" y="102.87" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -9196,7 +9485,7 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="93.98" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="73.66" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9414,16 +9703,17 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="114.3" x2="154.94" y2="114.3" width="0.1524" layer="91"/>
 <junction x="144.78" y="114.3"/>
 <wire x1="154.94" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
 <junction x="154.94" y="114.3"/>
 <label x="162.56" y="114.3" size="1.778" layer="95" xref="yes"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<junction x="134.62" y="114.3"/>
+<wire x1="139.7" y1="111.76" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+<junction x="139.7" y="114.3"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A2"/>
@@ -9486,10 +9776,13 @@ Source: AVX .. aphvc.pdf</description>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="VR1" gate="G$1" pin="S"/>
+<wire x1="134.62" y1="83.82" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="VFB"/>
-<wire x1="134.62" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<junction x="134.62" y="104.14"/>
+<wire x1="114.3" y1="104.14" x2="127" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="127" y1="104.14" x2="127" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="127" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
+<junction x="134.62" y="91.44"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -9497,6 +9790,13 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="BT3" gate="G$1" pin="+"/>
 <pinref part="BT2" gate="G$1" pin="-"/>
 <wire x1="93.98" y1="48.26" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="VR1" gate="G$1" pin="A"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="99.06" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

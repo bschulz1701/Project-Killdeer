@@ -88,3 +88,23 @@ Scripts and results from the testing process and development process. Contains m
 
 **Workaround:** Make a note on the board assembly (if working with a board house) as to which jumpers should be connected (see jumper tables). Otherwise, if assembling manually, check the jumpers are connected, and bridge them using solder wire and a soldering iron if they have failed to jump where desired. 
  -->
+
+## Specifications (3S1P)
+* Input Voltage (DC Input): 9V ~ 12V
+* Input Current (DC Input): 250mA, min
+* Low Battery Indication: 2.48V (~ 0.825V/Cell)
+
+**Quiescent Current Values**
+| Battery | DC Input | System State | Low Battery | Current Battery | Current DC Input |
+| ------- | -------- | ------------ | ----------- | --------------- | ---------------- |
+| 4.5V | 0V | Off | NO | 3.25&mu;A | 0A |
+| 4.5V | 0V | On | NO | 4.35&mu;A | 0A |
+| 4.5V | 9V | Off | NO | 2.22&mu;A | 10.67mA |
+| 4.5V | 9V | On | NO | 2.69&mu;A | 10.67mA |  
+| 2V | 9V | Off | YES | 0.97&mu;A| 10.98mA | 
+| 2V | 9V | On | YES | 1.42&mu;A | 10.98mA |
+
+## Known Issues/Errata
+**3S1P, v0.0:**
+* Silkscreen above DC input plug lists voltage range as "5V ~ 12V", if input is less than 7.5V, full output voltage will not be achieved 
+* If battery voltage falls below ~ 2V (~ 0.65V/Cell) **and** there is no DC input, the low battery light will not iluminate 
